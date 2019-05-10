@@ -29,16 +29,25 @@
 		<!-- Scripts -->
 			<script src="static/assets/js/jquery.min.js"></script>
 			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<!-- <script src="static/assets/js/jquery.scrolly.min.js"></script> -->
 			<script src="static/assets/js/skel.min.js"></script>
 			<script src="static/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="static/assets/js/main.js"></script>
 			<script src="static/assets/js/wow.min.js"></script>
 			<script src="static/assets/js/modernizr.custom.79639.js"></script> 
+			<script src="static/js/jquery.ripples.js"></script>
 
 <script>
   new WOW().init();
+</script>
+		
+<script>
+	$(document).ready(function () {
+	$('#page-wrapper').ripples({
+		resolution: 700,
+		dropRadius: 20,
+		perturbance: 0.02
+	});
+	});
 </script>
 		
 <script>
