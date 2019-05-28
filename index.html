@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Nicky Setia</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<link rel="stylesheet" href="static/assets/css/animate.min.css">
+		<link rel="stylesheet" href="static/assets/css/animate.min.css" />
 
 	</head>
 	<body class="landing">
@@ -27,42 +27,53 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<script src="static/assets/js/skel.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
-			<script src="static/assets/js/wow.min.js"></script>
-			<script src="static/assets/js/modernizr.custom.79639.js"></script> 
-			<script src="static/assets/js/jquery.ripples.js"></script>
-
-<script>
-  new WOW().init();
-</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="static/assets/js/jquery.scrollex.min.js"></script>
+		<script src="static/assets/js/skel.min.js"></script>
+		<script src="static/assets/js/util.js"></script>
+		<script src="static/assets/js/main.js"></script>
+		<script src="static/assets/js/wow.min.js"></script>
+		<script src="static/assets/js/modernizr.custom.79639.js"></script> 
+		<script src="static/assets/js/jquery.ripples.js"></script>
 		
-<script>
-	$(document).ready(function () {
-	$('#page-wrapper').ripples({
-		resolution: 700,
-		dropRadius: 20,
-		perturbance: 0.02
-	});
-	});
-</script>
+		<!-- Initializing wow js -->
+		<script>
+			new WOW().init();
+		</script>
 		
-<script>
-$(document).ready(function () {
-	//Disable cut copy paste
-	$('body').bind('cut copy paste', function (e) {
-		e.preventDefault();
-	});
-
-	//Disable mouse right click
-	$("body").on("contextmenu", function (e) {
-		return false;
-	});
-});
-</script>
+		<!-- Water effect -->
+		<script>
+			$(document).ready(function () {
+			$('#page-wrapper').ripples({
+				resolution: 700,
+				dropRadius: 20,
+				perturbance: 0.02
+			});
+			});
+		</script>
+		
+		<!-- Page restrictions -->
+		<script>
+			$(document).ready(function () {
+				//Disable cut copy paste
+				$('body').bind('cut copy paste', function (e) {
+					e.preventDefault();
+				});
+				//Disable mouse right click
+				$("body").on("contextmenu", function (e) {
+					return false;
+				});
+			});
+		</script>
+		
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141025942-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-141025942-1');
+		</script>
 
 </body>
 </html>
